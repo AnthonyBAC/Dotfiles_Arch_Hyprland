@@ -1,0 +1,75 @@
+
+
+
+// execute with: fastfetch --colors-block-range-start 9 --colors-block-width 3
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "~/.config/fastfetch/ASCII/arch.txt",
+        "padding": {
+            "top": 1,
+            "right": 3,
+            "left": 3,
+            "bottom": 2,
+        },
+            "color": {"1":"#57519B"}
+
+        
+    },
+    "display": {
+        "separator": " ",
+        "color": "#57519B",
+    },
+    "modules": [
+	"break",
+	"break",
+	{
+            "type": "title",
+            "keyWidth": 10,
+            "keyColor": "#57519B"
+        },
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "33",  // = color3
+        },
+        {
+            "type": "kernel",
+            "key": "󰣇 ",
+            "keyColor": "33",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ",
+            "keyColor": "33",  
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "33", 
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "33", 
+        },
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "33", 
+        },
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "33", 
+        },
+    
+        "break",
+       /* "colors",*/
+        "break",
+        "break",
+    ]
+}

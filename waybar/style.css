@@ -1,0 +1,131 @@
+@define-color bg #1E1E2E;
+@define-color text #CCCAC2;
+@define-color tp #1E1E2E;
+@define-color bg2 #CCCAC2;
+
+/* -----------------------------------------------------
+ * General 
+ * ----------------------------------------------------- */
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    border: 1px;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+window#waybar {
+    background-color: @tp;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* -----------------------------------------------------
+ * Workspaces 
+ * ----------------------------------------------------- */
+
+#workspaces {
+    padding: 5px 5px;
+    font-size: 14px;
+    color: @text;
+    background-color: @bg;
+    border-radius: 5px;
+}
+
+#workspaces button {
+    border: 0px;
+    margin: 0 2px;
+    padding: 0 5px;
+    color: @text;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    color: @bg;
+    background-color: @bg2;
+    border-radius: 5px;
+}
+
+#workspaces button:hover {
+    color: @bg;
+    background: @bg2;
+    border-radius: 5px;
+}
+
+/* -----------------------------------------------------
+ * Network
+ * ----------------------------------------------------- */
+
+#network {
+    font-size: 14px;
+    color: @text;
+    border-radius: 5px;
+    
+    background-color: @bg;
+}
+
+#network.ethernet {
+    color: @text;
+}
+
+#network.wifi {
+    color: @text;
+}
+
+/* -----------------------------------------------------
+ * Clock
+ * ----------------------------------------------------- */
+
+#clock {
+    font-size: 14px;
+    color: @text;
+    background-color: @bg;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+/* -----------------------------------------------------
+ * Battery
+ * ----------------------------------------------------- */
+
+#battery {
+    font-size: 14px;
+    color: @text;
+    border-radius: 5px;
+   padding: 0 10px 0 0;
+    background-color: @bg;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @text;
+}
+
+
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* -----------------------------------------------------
+ * Pulseaudio
+ * ----------------------------------------------------- */
+
+#pulseaudio {
+    font-size: 14px;
+    color: @text;
+    border-radius: 5px;
+    background-color: @bg;
+}
+
+#pulseaudio.muted {
+    color: @text;
+}
+
+

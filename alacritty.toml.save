@@ -1,0 +1,14 @@
+[window] 
+padding = { x = 5 , y = 5}
+opacity = 0.7
+
+[font]
+normal = { family = "  JetBrains Mono Nerd Font", style = "thin" }
+bold = { family = "  JetBrains Mono Nerd Font", style = "light" }
+size = 10
+#Offset - ExtraSpace around each character
+offset = {x = 2, y = -1}
+
+[cursor]
+style = { shape = "Underline", blinking = "On" }
+
