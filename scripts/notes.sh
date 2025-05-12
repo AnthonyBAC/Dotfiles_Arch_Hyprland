@@ -1,6 +1,6 @@
 #!/usr/bin/zsh
 
-cd ~/Documents/Notes
+cd ~/Documents/notes
 
 git add .
 git commit -m "Notes Update"

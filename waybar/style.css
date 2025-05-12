@@ -8,17 +8,17 @@
  * ----------------------------------------------------- */
 
 * {
-    font-family: "JetBrainsMono Nerd Font";
-    border: 1px;
-    border-radius: 10px;
-    font-weight: bold;
-
+    font-family: "Office Code Pro D Bold";
+    font-size: 12px;
 }
 
 window#waybar {
     background-color: @tp;
     transition-property: background-color;
     transition-duration: .5s;
+ 	border: 1px solid rgba(112,122,140,1);
+     border-radius: 5px;
+
 }
 
 /* -----------------------------------------------------
@@ -27,10 +27,9 @@ window#waybar {
 
 #workspaces {
     padding: 5px 5px;
-    font-size: 14px;
     color: @text;
-    background-color: @bg;
-    border-radius: 5px;
+    
+
 }
 
 #workspaces button {
@@ -39,7 +38,7 @@ window#waybar {
     padding: 0 5px;
     color: @text;
     transition: all 0.5s ease-in-out;
-    border-radius: 5px;
+
 }
 
 #workspaces button.active {
@@ -59,11 +58,8 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #network {
-    font-size: 14px;
     color: @text;
     border-radius: 5px;
-    
-    background-color: @bg;
 }
 
 #network.ethernet {
@@ -79,9 +75,7 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #clock {
-    font-size: 14px;
     color: @text;
-    background-color: @bg;
     padding: 0 10px;
     border-radius: 5px;
 }
@@ -91,11 +85,10 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #battery {
-    font-size: 14px;
     color: @text;
     border-radius: 5px;
    padding: 0 10px 0 0;
-    background-color: @bg;
+ 
 }
 
 #battery.charging,
@@ -118,10 +111,9 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #pulseaudio {
-    font-size: 14px;
     color: @text;
     border-radius: 5px;
-    background-color: @bg;
+
 }
 
 #pulseaudio.muted {
