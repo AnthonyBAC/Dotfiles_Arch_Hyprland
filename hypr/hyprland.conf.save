@@ -244,6 +244,7 @@ bind = $mainMod SHIFT, B, exec, ~/.config/waybar/launch.sh # Reload waybarV
 bind = $mainMod SHIFT, S, exec, grim -g "$(slurp -d)" - | wl-copy
 bind = $mainMod SHIFT, D, exec, IMG=~/Pictures/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png && grim -g "$(slurp)" $IMG
 
+
 # Switch workspaces with mainMod + [0-9]
 bind = $mainMod, 1, workspace, 1
 bind = $mainMod, 2, workspace, 2
