@@ -1,4 +1,142 @@
 
-//@theme "/dev/null"
+@theme "/dev/null"
 
-@theme "/usr/share/rofi/themes/gruvMinimalism.rasi"
+
+//@theme "/usr/share/rofi/themes/catppuccinMinimal.rasi"
+
+configuration {
+    drun {
+        display-name: " ";
+    }
+    timeout {
+        delay: 5;
+        action: "kb-cancel";
+    }
+    me-select-entry: ""; 
+    icon-theme: "Papirus";
+    show-icons: true;
+    fixed-num-lines: false;
+    font: "Office Code Pro D Bold 9";
+}
+
+* {
+    bg: #1E1E2E;
+
+    bg-scrollbar: #181825;
+    bg-scrollbar-handle: #CCCAC2;
+
+    border-window: rgba(112,122,140,0.4);
+    
+    bg-select: #CCCAC2;
+
+    input-entry-color: #CCCAC2 ;
+    input-placeholder-color: rgba(204, 202, 194, 0.4);
+    textbox-custom-color: rgba(204, 202, 194, 0.4);
+    num-filtered-rows-color: rgba(204, 202, 194, 0.8);
+    prompt-color: rgba(204, 202, 194, 0.8);
+    
+    text: #1E1E2E;
+    text-unselected: rgba(204, 202, 194, 0.5);
+
+  
+    
+
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    width: 25%;
+    border: 1;
+    border-color: @border-window;
+    border-radius: 5px;
+    background-color: @bg;
+    padding: 0.5em 0.5em 0 0.5em;
+}
+
+mainbox {
+    background-color: @bg;
+    border-radius: 5px;
+    children: [inputbar, listview];
+}
+
+inputbar {
+    background-color: @bg;
+    text-color: @input-text-color;
+    children: [prompt, entry, num-filtered-rows, textbox-custom, num-rows];
+}
+
+prompt {
+    background-color: @bg;
+    text-color: @prompt-color;
+    padding: 0 0.5em 0 0;
+}
+
+entry {
+    background-color: @bg;
+    text-color: @input-entry-color;
+    placeholder: "Run";
+    placeholder-color: @input-placeholder-color;
+    padding: 0;
+}
+
+textbox-custom{
+    background-color: @bg;
+    text-color: @input-placeholder-color;
+	content: "/";
+	padding: 0 0.2em;
+    expand: false;
+}
+
+num-filtered-rows, num-rows {
+    background-color: inherit;
+    text-color: @num-filtered-rows-color;
+}
+
+prompt, entry, element-icon, element-text, num-filtered-rows, case-indicator, num-rows, textbox-custom {
+    vertical-align: 0.5;
+}
+
+listview {
+    background-color: @bg;
+    padding: 0.5em 0 0.5em 0;
+    lines: 8;
+    children: [element, scrollbar];
+    scrollbar: true;
+    fixed-height: false;
+    dynamic: false; /*True if the size should change when filtering the list, False if it should
+         keep the original height.*/
+    fixed-columns: true;
+}
+
+scrollbar {
+    background-color: @bg-scrollbar;
+    handle-color: @bg-scrollbar-handle;
+    margin: 0 0 0 0.5em;
+    border-radius: 1em;
+}
+
+element-icon {
+    background-color: @bg;
+    padding: 0 0.5em 0 0 ;
+}
+
+element selected {
+    background-color: @bg;
+    text-color: @text;
+}
+
+element-text {
+    background-color: @bg;
+    text-color: @text-unselected;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+element-text selected {
+    background-color: @bg-select;
+    text-color: @text;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    border-radius: 5px;
+}
