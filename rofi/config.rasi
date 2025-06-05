@@ -29,7 +29,7 @@ configuration {
     
     bg-select: #CCCAC2;
 
-    input-entry-color: #CCCAC2 ;
+    input-entry-color: #CCCAC2 ; 
     input-placeholder-color: rgba(204, 202, 194, 0.4);
     textbox-custom-color: rgba(204, 202, 194, 0.4);
     num-filtered-rows-color: rgba(204, 202, 194, 0.8);
