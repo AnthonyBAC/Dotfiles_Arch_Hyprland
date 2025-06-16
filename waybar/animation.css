@@ -134,13 +134,13 @@
 */
 @keyframes distro_expand {
   to {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 @keyframes distro_in {
   to {
-    color: @distro-fg;
+    color: rgba(112, 122, 140, 1);
     text-shadow: 0 0 1.5px rgba(0, 0, 0, 1);
   }
 }
@@ -149,7 +149,7 @@
 */
 @keyframes power_expand {
   to {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -163,7 +163,7 @@
 */
 @keyframes module_expand {
   to {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 

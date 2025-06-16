@@ -6,7 +6,7 @@
   min-height: 0;
   border: none;
   margin: 0;
-  padding: 1px 0;
+  padding: 0;
 }
 
 /* ──────────────────────────────────────────────────────────┤ drop shadow ├───
@@ -22,6 +22,7 @@ window#waybar {
 window#waybar > box {
   background: @bg;
   margin: 3px;
+  padding: 5px;
 }
 
 /* ─────────────────────────────────────────────────────────────┤ tooltips ├───
@@ -194,7 +195,7 @@ tooltip label {
 /* ──────────────────────────────────────────────────────────┤ distro icon ├───
 */
 #custom-left5 {
-  color: @distro-bg;
+  color: @bg;
   background: @bg;
   text-shadow: none;
   margin-bottom: -2px;
@@ -202,15 +203,14 @@ tooltip label {
 }
 
 #custom-distro {
-  color: @distro-fg;
-  background: @distro-bg;
+  background: @bg;
   margin: 0 -1px -2px 0;
   padding: 0 0 0 3px;
   text-shadow: 0 0 1.5px rgba(0, 0, 0, 1);
 }
 
 #custom-right2 {
-  color: @distro-bg;
+  color: @bg;
   background: @bg;
   text-shadow: none;
   margin-bottom: -2px;
@@ -398,7 +398,7 @@ tooltip label {
 
 * {
   font-family: 'JetBrainsMono NF ExtraBold';
-  font-size: 14px;
+  font-size: 12.5px;
   font-weight: bold;
 }
 
@@ -423,7 +423,7 @@ tooltip label,
 #custom-right3,
 #custom-right4,
 #custom-right5 {
-  font-size: 14px;
+  font-size: 14.68px;
 }
 
 /* ─────────────────────────────────────────────────┤ left & right inverse ├───
@@ -431,18 +431,18 @@ tooltip label,
 #custom-leftin1,
 #custom-leftin2,
 #custom-rightin1 {
-  font-size: 14px;
+  font-size: 15.5px;
 }
 
 /* ──────────────────────────────────────────────────────────┤ distro icon ├───
 */
 #custom-distro {
-  font-size: 14px;
+  font-size: 14.6px;
 }
 
 #custom-left5,
 #custom-right2 {
-  font-size: 14px;
+  font-size: 15.68px;
 }
 
 /*

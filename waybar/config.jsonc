@@ -15,7 +15,7 @@
 
   "modules-left": [
     // "custom/theme",         // theme switcher
-    // "custom/left1",
+    "custom/left1",
 
     "hyprland/workspaces",  // workspaces
     "custom/right1",
