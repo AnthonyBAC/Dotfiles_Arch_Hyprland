@@ -4,8 +4,8 @@ opacity = 0.8
 decorations = "None"
 
 [font]
-normal = { family = "Office Code Pro D Light", style = "Light" }
-bold = { family = "Office Code Pro D Bold", style = "Bold" }
+normal = { family = "JetBrainsMono NF Light", style = "Light" }
+bold = { family = "JetBrainsMono NF ExtraBold", style = "Bold" }
 size = 11
 
 #Offset - ExtraSpace around each character

@@ -6,16 +6,12 @@
   "mode": "dock",
   "reload_style_on_change": true,
   "gtk-layer-shell": true,
-  "margin-bottom": 0,
-  "margin-left": 15,
-  "margin-right": 15,
-  "margin-top": 10,
 
   // ──────────────────────────────────────────────────────────┤ positions ├───
 
   "modules-left": [
-    // "custom/theme",         // theme switcher
-    // "custom/left1",
+    "custom/theme",         // theme switcher
+    "custom/left1",
 
     "hyprland/workspaces",  // workspaces
     "custom/right1",

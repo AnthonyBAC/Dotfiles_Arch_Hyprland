@@ -16,7 +16,7 @@ configuration {
     icon-theme: "Papirus";
     show-icons: true;
     fixed-num-lines: false;
-    font: "Office Code Pro D Bold 9";
+    font: "JetBrainsMono NF ExtraBold 11";
 }
 
 * {
@@ -48,7 +48,7 @@ configuration {
 }
 
 window {
-    width: 25%;
+    width: 30%;
     border: 1;
     border-color: @border-window;
     border-radius: 5px;
@@ -71,7 +71,7 @@ inputbar {
 prompt {
     background-color: @bg;
     text-color: @prompt-color;
-    padding: 0 0.5em 0 0;
+    padding: 0 0.3em 0 0;
 }
 
 entry {
@@ -120,7 +120,7 @@ scrollbar {
 
 element-icon {
     background-color: @bg;
-    padding: 0 0.5em 0 0 ;
+    padding: 0 0.3em 0 0 ;
 }
 
 element selected {
