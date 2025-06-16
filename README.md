@@ -34,6 +34,11 @@ This is a collection of my dotfiles, which I use to configure my system.
 | fzf                                               | Fuzzy finder                 |
 | zoxide                                            | Directory jumper             |
 | zsh                                               | Shell                        |
+| gtk3                                              | GTK3                         |
+| gtk4                                              | GTK4                         |
+| qt5ct                                             | Qt5                          |
+| kvantum                                           | Qt5                          |
+| catppuccin-gtk-theme-mocha                        | GTK Theme                    |
 
 ## Installation
 
@@ -47,7 +52,7 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 ### Packages
 
 ```bash
-yay -S alacritty rofi-lbonn-wayland-git waybar ttf-jetbrains-mono-nerd hyprland swww htop hyprpicker onlyoffice visual-studio-code-bin windsurf pnpm npm jdk-openjdk xdg-desktop-portal-wlr ttf-font-awesome papirus-icon-theme pavucontrol networkmanager bluez bluez-utils bluez-tools waypaper sddm qogir-cursor-theme-git pipewire pipewire-alsa pipewire-pulse wireplumber brightnessctl pulseaudio pulseaudio-alsa wpctl fzf zoxide zsh
+yay -S alacritty rofi-lbonn-wayland-git waybar ttf-jetbrains-mono-nerd hyprland swww htop hyprpicker onlyoffice visual-studio-code-bin windsurf pnpm npm jdk-openjdk xdg-desktop-portal-wlr ttf-font-awesome papirus-icon-theme pavucontrol networkmanager bluez bluez-utils bluez-tools waypaper sddm qogir-cursor-theme-git pipewire pipewire-alsa pipewire-pulse wireplumber brightnessctl pulseaudio pulseaudio-alsa wpctl fzf zoxide zsh gtk3 gtk4 qt5ct kvantum catppuccin-gtk-theme-mocha
 
 ```
 
