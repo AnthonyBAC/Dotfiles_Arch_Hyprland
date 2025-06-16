@@ -53,6 +53,6 @@ yay -S alacritty rofi-lbonn-wayland-git waybar ttf-jetbrains-mono-nerd hyprland 
 
 ## Images
 
-![alt text](image.png)
-
-![alt text](image-1.png)
+![alt text](/images_for_git/image.png)
+![alt text](/images_for_git/image-1.png)
+![alt text](/images_for_git/image-2.png)
