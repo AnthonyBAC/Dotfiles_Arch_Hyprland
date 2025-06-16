@@ -93,7 +93,10 @@ alias wayr="~/.config/waybar/launch.sh"
 alias notes="~/scripts/notes.sh"
 alias ex="~/scripts/ex.sh"
 alias pushing="~/scripts/pushing.sh"
+alias windsurf='ELECTRON_DISABLE_SECURITY_WARNINGS=true windsurf'
 alias sql="LANG=es_ES.UTF-8 oracle-sqldeveloper"
+export ELECTRON_DISABLE_SECURITY_WARNINGS=true
+
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
