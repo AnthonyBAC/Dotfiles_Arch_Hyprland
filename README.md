@@ -2,38 +2,38 @@
 
 This is a collection of my dotfiles, which I use to configure my system.
 
-| Package                                           | Usage              |
-| ------------------------------------------------- | ------------------ |
-| alacritty                                         | Terminal           |
-| rofi-lbonn-wayland-git                            | Launcher           |
-| waybar                                            | Status bar         |
-| ttf-jetbrains-mono-nerd                           | Font               |
-| hyprland                                          | Window manager     |
-| swww                                              | Wallpaper          |
-| htop                                              | System monitor     |
-| hyprpicker                                        | Color Picker       |
-| onlyoffice                                        | Document viewer    |
-| visual-studio-code-bin                            | Code editor        |
-| windsurf                                          | IDE                |
-| pnpm                                              | Package manager    |
-| npm                                               | Package manager    |
-| jdk-openjdk                                       | Java               |
-| xdg-desktop-portal-wlr                            | Desktop portal     |
-| ttf-font-awesome                                  | Icons              |
-| papirus-icon-theme                                | Icons              |
-| pavucontrol                                       | Volume control     |
-| networkmanager                                    | Network manager    |
-| bluez bluez-utils bluez-tools                     | Bluetooth          |
-| waypaper                                          | Wallpaper          |
-| sddm                                              | Display manager    |
-| qogir-cursor-theme-git                            | Cursor theme       |
-| pipewire pipewire-alsa pipewire-pulse wireplumber | Audio              |
-| brightnessctl                                     | Brightness control |
-| pulseaudio pulseaudio-alsa                        | Audio              |
-| wpctl                                             | Audio              |
-| fzf                                               | Fuzzy finder       |
-| zoxide                                            | Directory jumper   |
-| zsh                                               | Shell              |
+| Package                                           | Usage                        |
+| ------------------------------------------------- | ---------------------------- |
+| alacritty                                         | Terminal                     |
+| rofi-lbonn-wayland-git                            | Launcher                     |
+| waybar                                            | Status bar                   |
+| ttf-jetbrains-mono-nerd                           | Font                         |
+| ttf-font-awesome                                  | Font - Icons                 |
+| hyprland                                          | Window manager               |
+| swww                                              | Wallpaper                    |
+| htop                                              | System monitor               |
+| hyprpicker                                        | Color Picker                 |
+| onlyoffice                                        | Document viewer              |
+| visual-studio-code-bin                            | Code editor                  |
+| windsurf                                          | IDE                          |
+| pnpm                                              | Package manager              |
+| npm                                               | Package manager              |
+| jdk-openjdk                                       | Java                         |
+| xdg-desktop-portal-wlr                            | Desktop portal(for obsidian) |
+| papirus-icon-theme                                | Icons                        |
+| pavucontrol                                       | Volume control               |
+| networkmanager                                    | Network manager              |
+| bluez bluez-utils bluez-tools                     | Bluetooth                    |
+| waypaper                                          | Wallpaper                    |
+| sddm                                              | Display manager              |
+| qogir-cursor-theme-git                            | Cursor theme                 |
+| pipewire pipewire-alsa pipewire-pulse wireplumber | Audio                        |
+| brightnessctl                                     | Brightness control           |
+| pulseaudio pulseaudio-alsa                        | Audio                        |
+| wpctl                                             | Audio                        |
+| fzf                                               | Fuzzy finder                 |
+| zoxide                                            | Directory jumper             |
+| zsh                                               | Shell                        |
 
 ## Installation
 
