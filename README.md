@@ -2,6 +2,39 @@
 
 This is a collection of my dotfiles, which I use to configure my system.
 
+| Package                                           | Usage              |
+| ------------------------------------------------- | ------------------ |
+| alacritty                                         | Terminal           |
+| rofi-lbonn-wayland-git                            | Launcher           |
+| waybar                                            | Status bar         |
+| ttf-jetbrains-mono-nerd                           | Font               |
+| hyprland                                          | Window manager     |
+| swww                                              | Wallpaper          |
+| htop                                              | System monitor     |
+| hyprpicker                                        | Color Picker       |
+| onlyoffice                                        | Document viewer    |
+| visual-studio-code-bin                            | Code editor        |
+| windsurf                                          | IDE                |
+| pnpm                                              | Package manager    |
+| npm                                               | Package manager    |
+| jdk-openjdk                                       | Java               |
+| xdg-desktop-portal-wlr                            | Desktop portal     |
+| ttf-font-awesome                                  | Icons              |
+| papirus-icon-theme                                | Icons              |
+| pavucontrol                                       | Volume control     |
+| networkmanager                                    | Network manager    |
+| bluez bluez-utils bluez-tools                     | Bluetooth          |
+| waypaper                                          | Wallpaper          |
+| sddm                                              | Display manager    |
+| qogir-cursor-theme-git                            | Cursor theme       |
+| pipewire pipewire-alsa pipewire-pulse wireplumber | Audio              |
+| brightnessctl                                     | Brightness control |
+| pulseaudio pulseaudio-alsa                        | Audio              |
+| wpctl                                             | Audio              |
+| fzf                                               | Fuzzy finder       |
+| zoxide                                            | Directory jumper   |
+| zsh                                               | Shell              |
+
 ## Installation
 
 ### Yay installation
@@ -17,3 +50,9 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 yay -S alacritty rofi-lbonn-wayland-git waybar ttf-jetbrains-mono-nerd hyprland swww htop hyprpicker onlyoffice visual-studio-code-bin windsurf pnpm npm jdk-openjdk xdg-desktop-portal-wlr ttf-font-awesome papirus-icon-theme pavucontrol networkmanager bluez bluez-utils bluez-tools waypaper sddm qogir-cursor-theme-git pipewire pipewire-alsa pipewire-pulse wireplumber brightnessctl pulseaudio pulseaudio-alsa wpctl fzf zoxide zsh
 
 ```
+
+## Images
+
+![alt text](image.png)
+
+![alt text](image-1.png)
