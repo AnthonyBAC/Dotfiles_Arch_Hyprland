@@ -14,10 +14,11 @@ cp -r ~/.config/waybar ~/dotfiles
 cp -f ~/.zshrc ~/dotfiles
 cp -r ~/scripts ~/dotfiles
 cp -r ~/Pictures/wallpapers ~/dotfiles
+cp -r /usr/share/sddm ~/dotfiles
 
 cd ~/dotfiles
 git add .
-git commit -m "all"
+git commit -m "Packages Update"
 git pull --rebase
 git push
 
