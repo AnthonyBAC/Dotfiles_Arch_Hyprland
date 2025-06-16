@@ -4,8 +4,8 @@ opacity = 0.8
 decorations = "None"
 
 [font]
-normal = { family = "JetBrainsMono NF Light", style = "Light" }
-bold = { family = "JetBrainsMono NF ExtraBold", style = "Bold" }
+normal = { family = "JetBrainsMono NF ExtraBold", style = "Bolder" }
+bold = { family = "JetBrainsMono NF ExtraBold", style = "Bolder" }
 size = 11
 
 #Offset - ExtraSpace around each character

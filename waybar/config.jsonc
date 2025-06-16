@@ -270,7 +270,7 @@
   // ───────────────────────────────────────────────────────────────┤ date ├───
 
   "clock#date": {
-    "format": "󰸗 {:%m-%d}",
+    "format": "󰸗 {:%b-%d}",
     "tooltip-format": "<tt>{calendar}</tt>",
 
     "calendar": {
