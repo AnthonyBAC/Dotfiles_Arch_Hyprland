@@ -61,6 +61,11 @@ tooltip label {
   padding: 0 4px;
 }
 
+#custom-ethernet {
+  opacity: 1;
+  color: @module-fg;
+}
+
 #custom-left1,
 #custom-left2,
 #custom-left3,

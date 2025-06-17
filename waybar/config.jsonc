@@ -318,7 +318,7 @@
     "format": "{}",
     "on-click": "alacritty --class dotfiles-floating -e nmtui",
     "on-click-right": "~/dotfiles/.settings/networkmanager.sh",
-    "interval": 1,
+    "interval": 2,
   "min-length": 1,
   "max-length": 2
 },
