@@ -269,6 +269,17 @@ tooltip label {
   color: @hover-fg;
 }
 
+/* ────────────────────────────────────────────────────────────┤ ethernet ├───
+*/
+#custom-ethernet {
+  background: @tray;
+  padding: 0 4px;
+}
+
+#custom-ethernet:hover {
+  color: @hover-fg;
+}
+
 /* ────────────────────────────────────────────────────────────┤ bluetooth ├───
 */
 #bluetooth {

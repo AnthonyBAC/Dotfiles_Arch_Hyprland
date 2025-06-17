@@ -48,7 +48,9 @@
     "clock#date",           // date
     "custom/right4",
 
+   
     "custom/wifi",          // wi-fi
+    "custom/ethernet",              // network
     "bluetooth",            // bluetooth
     "custom/update",        // system update
     "custom/right5"
@@ -304,11 +306,23 @@
     "return-type": "json",
     "format": "{}",
     "on-click": "~/.config/waybar/scripts/wifi-menu.sh",
-    "on-click-right": "kitty --title '󰤨  Network Manager TUI' bash -c nmtui",
+    "on-click-right": "alacritty --title '󰤨  Network Manager TUI' bash -c nmtui",
     "interval": 1,
     "min-length": 1,
     "max-length": 1
   },
+
+  "custom/ethernet": {
+    "exec": "~/.config/waybar/scripts/ethernet-status.sh",
+    "return-type": "json",
+    "format": "{}",
+    "on-click": "alacritty --class dotfiles-floating -e nmtui",
+    "on-click-right": "~/dotfiles/.settings/networkmanager.sh",
+    "interval": 1,
+  "min-length": 1,
+  "max-length": 2
+},
+
 
   // ──────────────────────────────────────────────────────────┤ bluetooth ├───
 
