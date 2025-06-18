@@ -40,6 +40,11 @@ This is a collection of my dotfiles, which I use to configure my system.
 | kvantum                                           | Qt5                          |
 | catppuccin-gtk-theme-mocha                        | GTK Theme                    |
 
+## Waybar
+
+I use this repository for the waybar with some personal changes<br>
+[Waybar Mechabar](https://github.com/sejjy/mechabar)
+
 ## Installation
 
 ### Yay installation
