@@ -42,8 +42,10 @@ This is a collection of my dotfiles, which I use to configure my system.
 
 ## Waybar
 
-I use this repository for the waybar with some personal changes<br>
+I use this repository for the waybar with some personal changes on scripts, modules and visibility<br>
 [Waybar Mechabar](https://github.com/sejjy/mechabar)
+
+![alt text](./Images_for_git/waybar.png)
 
 ## Installation
 
