@@ -13,13 +13,11 @@
             "left": 3,
             "bottom": 2,
         },
-            "color": {"1":"#57519B"}
 
         
     },
     "display": {
-        "separator": " ",
-        "color": "#57519B",
+        "separator": " "
     },
     "modules": [
 	"break",
