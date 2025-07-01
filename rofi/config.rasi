@@ -25,7 +25,7 @@ configuration {
     bg-scrollbar: #717171;
     bg-scrollbar-handle: #D5D5D5;
 
-    border-window: rgba(112,122,140,0.4);
+    border-window: #E5E8EECC;
     
     bg-select: #D5D5D5;
 
@@ -51,7 +51,7 @@ window {
     width: 30%;
     border: 1;
     border-color: @border-window;
-    border-radius: 5px;
+    border-radius: 0px;
     background-color: @bg;
     padding: 0.5em 0.5em 0 0.5em;
 }
@@ -115,7 +115,7 @@ scrollbar {
     background-color: @bg-scrollbar;
     handle-color: @bg-scrollbar-handle;
     margin: 0 0 0 0.5em;
-    border-radius: 1em;
+    border-radius: 0em;
 }
 
 element-icon {
@@ -138,5 +138,5 @@ element-text selected {
     background-color: @bg-select;
     text-color: @text;
     padding: 0.2em 0.2em 0.2em 0.2em;
-    border-radius: 5px;
+    border-radius: 0px;
 }
