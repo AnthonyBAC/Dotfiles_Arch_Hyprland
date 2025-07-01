@@ -18,7 +18,7 @@ cp -r /usr/share/sddm ~/dotfiles
 
 cd ~/dotfiles
 git add .
-git commit -m "Packages Update"
+git commit -m "Dotfiles Update"
 git pull --rebase
 git push
 
