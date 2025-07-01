@@ -144,11 +144,11 @@ geometry = "0x0-30+20"
 
     ### Text ###
 
-    font = Adwaita Sans 7
+    font = JetBrainsMono NF Extrabold 8
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
-    line_height = 0
+    line_height = 2
 
     # Possible values are:
     # full: Allow a small subset of html markup in notifications:
@@ -341,23 +341,23 @@ geometry = "0x0-30+20"
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-   background = "#1e1e2e"
-foreground = "#cdd6f4"
+   background = "#000000"
+    foreground = "#E5E8EE"
     timeout = 10
     # Icon for notifications with low urgency
     default_icon = dialog-information
 
 [urgency_normal]
-background = "#1e1e2e"
-foreground = "#cdd6f4"
+background = "#000000"
+foreground = "#E5E8EE"
     timeout = 10
     override_pause_level = 30
     # Icon for notifications with normal urgency
     default_icon = dialog-information
 
 [urgency_critical]
-background = "#1e1e2e"
-foreground = "#cdd6f4"
+background = "#000000"
+foreground = "#E5E8EE"
 frame_color = "#fab387"
     timeout = 0
     override_pause_level = 60
