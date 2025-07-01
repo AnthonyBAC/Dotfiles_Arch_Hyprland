@@ -1,0 +1,23 @@
+# Window padding
+window_padding_width 5
+window_padding_height 5
+
+# Opacity
+background_opacity 0.8
+
+# Hide window decorations (title bar and borders)
+hide_window_decorations yes
+
+# Fonts
+font_family JetBrainsMono Nerd Font
+bold_font JetBrainsMono Nerd Font
+font_size 11.0
+
+# Cursor
+cursor_shape underline
+cursor_blinking no
+
+# Character spacing tweaks (approximate offset)
+letter_spacing 0.1
+line_spacing 0.0
+

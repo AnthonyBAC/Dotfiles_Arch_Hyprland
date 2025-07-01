@@ -15,8 +15,8 @@ cp -f ~/.zshrc ~/dotfiles
 cp -r ~/scripts ~/dotfiles
 cp -r ~/Pictures/wallpapers ~/dotfiles
 cp -r /usr/share/sddm ~/dotfiles
-cp -r /.config/yazi ~/dotfiles
-cp -r /.config/kitty ~/dotfiles
+cp -r ~/.config/yazi ~/dotfiles
+cp -r ~/.config/kitty ~/dotfiles
 
 cd ~/dotfiles
 git add .

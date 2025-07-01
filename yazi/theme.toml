@@ -1,0 +1,6 @@
+[mgr]
+# When a file is selected (marked with 'v')
+marker_selected = { fg = "black", bg = "#E5E8EE", bold = true }
+
+# Optional: When cursor is hovering a file
+hovered = { fg = "black", bg = "#E5E8EE", bold = true }
