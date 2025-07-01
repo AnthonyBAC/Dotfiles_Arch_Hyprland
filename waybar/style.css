@@ -1,5 +1,31 @@
-@import 'theme.css';
-@define-color bg #1E1E2E;
+@define-color bg #030303;
+@define-color gray-60 #666666; /* gris medio */
+@define-color gray-20 #cccccc; /* gris claro */
+
+@define-color main-fg @gray-20;
+@define-color module-fg @gray-20;
+@define-color main-br @gray-60;
+@define-color hover-fg @gray-20;
+@define-color hover-bg @gray-60;
+@define-color active-fg @gray-20;
+@define-color active-bg @gray-60;
+
+@define-color workspaces @gray-60;
+@define-color temperature @gray-60;
+@define-color memory @gray-60;
+@define-color cpu @gray-60;
+@define-color time @gray-60;
+@define-color date @gray-60;
+@define-color tray @gray-60;
+@define-color pulseaudio @gray-60;
+@define-color backlight @gray-60;
+@define-color battery @gray-60;
+@define-color power @gray-60;
+
+@define-color warning #ffaa00;
+@define-color critical #ff4444;
+@define-color charging #44ff44;
+
 /* ───────────────────────────────────────────────────────────────┤ global ├───
 */
 * {

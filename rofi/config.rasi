@@ -20,23 +20,23 @@ configuration {
 }
 
 * {
-    bg: #1E1E2E;
+    bg: #000000;
 
-    bg-scrollbar: #181825;
-    bg-scrollbar-handle: #CCCAC2;
+    bg-scrollbar: #717171;
+    bg-scrollbar-handle: #D5D5D5;
 
     border-window: rgba(112,122,140,0.4);
     
-    bg-select: #CCCAC2;
+    bg-select: #D5D5D5;
 
-    input-entry-color: #CCCAC2 ; 
-    input-placeholder-color: rgba(204, 202, 194, 0.4);
-    textbox-custom-color: rgba(204, 202, 194, 0.4);
-    num-filtered-rows-color: rgba(204, 202, 194, 0.8);
-    prompt-color: rgba(204, 202, 194, 0.8);
+    input-entry-color: #D5D5D5 ; 
+    input-placeholder-color: rgba(255, 255, 255, 0.2);
+    textbox-custom-color: rgba(255, 255, 255, 0.2);
+    num-filtered-rows-color: rgba(255, 255, 255, 0.2);
+    prompt-color: rgba(255, 255, 255, 0.2);
     
-    text: #1E1E2E;
-    text-unselected: rgba(204, 202, 194, 0.5);
+    text: #000000;
+    text-unselected: rgba(255, 255, 255, 0.2);
 
   
     

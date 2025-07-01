@@ -68,8 +68,8 @@
     "custom/left8",
     "battery",              // battery
 
-    "custom/leftin2",
-    "custom/power"          // power button
+    "custom/right1"
+    //"custom/power"          // power button
   ],
 
   // ─────────────────────────────────────────────────────┤ theme switcher ├───

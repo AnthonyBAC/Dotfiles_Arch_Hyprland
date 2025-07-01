@@ -95,6 +95,7 @@ alias ex="~/scripts/ex.sh"
 alias pushing="~/scripts/pushing.sh"
 alias windsurf='ELECTRON_DISABLE_SECURITY_WARNINGS=true windsurf'
 alias sql="LANG=es_ES.UTF-8 oracle-sqldeveloper"
+export EDITOR="/usr/share/windsurf/windsurf"
 export ELECTRON_DISABLE_SECURITY_WARNINGS=true
 
 # Shell integrations
