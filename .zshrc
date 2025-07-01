@@ -2,7 +2,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 # Restore pywal colors if lost (run in every shell start)
-#(cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)
 
 
 if [[ $(tty) == *"pts"* ]]; then
