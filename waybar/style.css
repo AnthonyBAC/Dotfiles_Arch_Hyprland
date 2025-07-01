@@ -1,6 +1,8 @@
 @define-color bg #000000;
-@define-color gray-60 #666666; /* gris medio */
-@define-color gray-20 #cccccc; /* gris claro */
+@define-color gray-60 #666666;
+/* gris medio */
+@define-color gray-20 #cccccc;
+/* gris claro */
 
 @define-color main-fg @gray-20;
 @define-color module-fg @gray-20;
@@ -39,16 +41,16 @@
 */
 window#waybar {
   background: @bg;
-  border: 2px solid rgba(112, 122, 140, 1);
-  border-radius: 8px;
+  border: 0.5px solid rgba(112, 122, 140, 1);
+  /* border-radius: 8px; */
 }
 
 /* ───────────────────────────────────────────────────────────┤ background ├───
 */
 window#waybar > box {
   background: @bg;
-  margin: 3px;
-  padding: 1px 0;
+  margin: 2px;
+  padding: 0px 0;
 }
 
 /* ─────────────────────────────────────────────────────────────┤ tooltips ├───
