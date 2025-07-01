@@ -1,3 +1,4 @@
+
 [window] 
 padding = { x = 5 , y = 5}
 opacity = 0.85
@@ -13,5 +14,8 @@ offset = {x =1, y = 0}
 
 [cursor]
 style = { shape = "Underline", blinking = "off" }
+
+[general]
+import = ["~/.cache/wal/colors-alacritty.toml"]
 
 
