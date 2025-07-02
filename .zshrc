@@ -103,7 +103,7 @@ export ELECTRON_DISABLE_SECURITY_WARNINGS=true
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export JAVA_HOME=/usr/lib/jvm/default
 export PATH=$JAVA_HOME/bin:$PATH
 export TERM=xterm-256color
 
