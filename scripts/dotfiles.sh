@@ -17,7 +17,7 @@ cp -r ~/Pictures/wallpapers ~/dotfiles
 cp -r /usr/share/sddm ~/dotfiles
 cp -r ~/.config/yazi ~/dotfiles
 cp -r ~/.config/kitty ~/dotfiles
-
+cp -r ~/.cache/wal/sequences ~/dotfiles
 cd ~/dotfiles
 git add .
 git commit -m "Dotfiles Update"
