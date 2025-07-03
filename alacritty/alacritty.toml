@@ -15,6 +15,5 @@ offset = {x =1, y = 0}
 style = { shape = "Underline", blinking = "off" }
 
 [general]
-import = ["~/.cache/wal/colors-alacritty.toml"]
-
+import = ["~/scripts/colors-alacritty.toml"]
 
