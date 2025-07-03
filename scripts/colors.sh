@@ -15,7 +15,7 @@ printf '\033]4;10;#9C9EA2\033\\'
 printf '\033]4;11;#ACAEB3\033\\'
 printf '\033]4;12;#BBBEC3\033\\'
 printf '\033]4;13;#CDD0D5\033\\'
-printf '\033]4;14;#DADCE2\033\\'
+printf '\033]4;14;#A5A7AB\033\\' #Comment
 printf '\033]4;15;#E6E7EA\033\\'
 printf '\033]10;#E6E7EA\033\\'  # foreground
 printf '\033]11;#000000\033\\'  # background
