@@ -1,5 +1,8 @@
 [keys.normal]
 v = { exec = "/usr/sbin/code \"$YAZI_FILE\" &", desc = "Open file in VS Code" }
 V = { exec = "/usr/sbin/code \"$YAZI_CURRENT\" &", desc = "Open folder in VS Code" }
+[[manager.keymap]]
+on = "ctrl-t"
+run = "shell --block=false alacritty --working-directory '$PWD'"
 
 

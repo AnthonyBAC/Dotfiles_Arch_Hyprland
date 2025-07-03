@@ -87,8 +87,8 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
+alias a='alacritty &'
 alias ls='ls --color'
-alias vim='sudo -E -s nvim'
 alias c='clear'
 alias dots="~/scripts/dotfiles.sh"
 alias wayr="~/.config/waybar/launch.sh"
@@ -106,6 +106,7 @@ eval "$(zoxide init --cmd cd zsh)"
 export JAVA_HOME=/usr/lib/jvm/default
 export PATH=$JAVA_HOME/bin:$PATH
 export TERM=xterm-256color
+export PATH="$HOME/scripts:$PATH"
 
 
 
