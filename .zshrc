@@ -87,6 +87,8 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
+alias wioff='nmcli r wifi off'
+alias wion='nmcli r wifi on'
 alias a='alacritty &'
 alias ls='ls --color'
 alias c='clear'
