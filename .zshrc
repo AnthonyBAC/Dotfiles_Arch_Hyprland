@@ -101,6 +101,7 @@ alias windsurf='ELECTRON_DISABLE_SECURITY_WARNINGS=true windsurf'
 alias sql="LANG=es_ES.UTF-8 oracle-sqldeveloper"
 export EDITOR="/usr/share/windsurf/windsurf"
 export ELECTRON_DISABLE_SECURITY_WARNINGS=true
+alias restart-iwd='sudo systemctl restart iwd'
 
 # Shell integrations
 eval "$(fzf --zsh)"

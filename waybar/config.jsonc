@@ -34,13 +34,13 @@
 
     "custom/left4",
     "cpu", // cpu
-    "custom/leftin1",
+    // "custom/leftin1",
 
     "custom/left5",
     "custom/distro", // distro icon
     "custom/right2",
 
-    "custom/rightin1",
+    // "custom/rightin1",
     "idle_inhibitor", // idle inhibitor
     "clock#time", // time
     "custom/right3",
@@ -269,13 +269,13 @@
   // ──────────────────────────────────────────────────────────────┤ wi-fi ├───
 
   "custom/wifi": {
-  "exec": "~/.config/waybar/scripts/wifi-status.sh",
-  "return-type": "json",
-  "format": "{}",
-  "interval": 5,
-  "on-click": "alacritty --title '󰤨 WiFi Menu' -e iwctl",
-  "tooltip": true
-   },
+    "exec": "~/.config/waybar/scripts/wifi-status.sh",
+    "return-type": "json",
+    "format": "{}",
+    "interval": 5,
+    "on-click": "alacritty --title '󰤨 WiFi Menu' -e nmtui",
+    "tooltip": true
+  },
 
   "custom/ethernet": {
     "exec": "~/.config/waybar/scripts/ethernet-status.sh",
@@ -417,58 +417,58 @@
   // ────────────────────────────────────────────────────────┤ left arrows ├───
 
   "custom/left1": {
-    "format": "",
+    "format": "[",
     "tooltip": false
   },
   "custom/left2": {
-    "format": "",
+    "format": "[",
     "tooltip": false
   },
   "custom/left3": {
-    "format": "",
+    "format": "[",
     "tooltip": false
   },
   "custom/left4": {
-    "format": "",
+    "format": "[",
     "tooltip": false
   },
   "custom/left5": {
-    "format": "",
+    "format": "[",
     "tooltip": false
   },
   "custom/left6": {
-    "format": "",
+    "format": "[",
     "tooltip": false
   },
   "custom/left7": {
-    "format": "",
+    "format": "[",
     "tooltip": false
   },
   "custom/left8": {
-    "format": "",
+    "format": "[",
     "tooltip": false
   },
 
   // ───────────────────────────────────────────────────────┤ right arrows ├───
 
   "custom/right1": {
-    "format": "",
+    "format": "]",
     "tooltip": false
   },
   "custom/right2": {
-    "format": "",
+    "format": "]",
     "tooltip": false
   },
   "custom/right3": {
-    "format": "",
+    "format": "]",
     "tooltip": false
   },
   "custom/right4": {
-    "format": "",
+    "format": "]",
     "tooltip": false
   },
   "custom/right5": {
-    "format": "",
+    "format": "]",
     "tooltip": false
   },
 

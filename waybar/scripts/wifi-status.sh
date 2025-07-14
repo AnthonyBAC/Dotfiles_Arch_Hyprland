@@ -1,53 +1,41 @@
 #!/usr/bin/env bash
 
-interface=$(iwctl device list | sed -r "s/\x1B\[[0-9;]*[mK]//g" | grep -E '^  \w' | grep -v 'Name' | awk '{print $1}' | head -n1)
+# Obtener la interfaz Wi-Fi activa
+interface=$(nmcli device status | grep wifi | awk '{print $1}')
+connection=$(nmcli -t -f active,ssid dev wifi | grep '^yes' | cut -d':' -f2)
 
-if [[ -z "$interface" ]]; then
-    echo '{"text": "󰤫", "tooltip": "No Wi-Fi device found"}'
-    exit 1
-fi
-
-station_info=$(iwctl station "$interface" show | sed -r "s/\x1B\[[0-9;]*[mK]//g")
-
-ssid=$(echo "$station_info" | grep -i 'Connected network' | awk '{$1=$2=""; sub(/^  */, ""); print}')
-
-signal=$(echo "$station_info" | grep "^ *RSSI" | awk '{print $2}' | tr -d 'dBm ')
-
-signal_value=$(( -1 * signal ))
-
-ipaddr=$(echo "$station_info" | grep "IPv4 address" | awk '{$1=$2=""; sub(/^  */, ""); print}')
-
-channel=$(echo "$station_info" | grep "Channel" | awk '{$1=""; sub(/^  */, ""); print}')
-
-security=$(echo "$station_info" | grep "Security" | awk '{$1=""; sub(/^  */, ""); print}')
-
-txrate=$(echo "$station_info" | grep "TxBitrate" | awk '{$1=""; sub(/^  */, ""); print}' | sed 's/ Kbit\/s//')
-
-rxrate=$(echo "$station_info" | grep "RxBitrate" | awk '{$1=""; sub(/^  */, ""); print}' | sed 's/ Kbit\/s//')
-
-if [[ -z "$ssid" ]]; then
-    echo '{"text": "󰤯", "tooltip": "Not connected to any network"}'
+if [[ -z "$interface" || -z "$connection" ]]; then
+    echo '{"text": "󰤯", "tooltip": "No conectado a ninguna red Wi-Fi"}'
     exit 0
 fi
 
-icon="󰤯"
+# Obtener detalles de la conexión
+signal=$(nmcli -t -f active,signal dev wifi | grep '^yes' | cut -d':' -f2)
+ipaddr=$(nmcli -t -f IP4.ADDRESS device show "$interface" | cut -d':' -f2 | cut -d'/' -f1)
+txrate=$(iw dev "$interface" link | grep -i 'tx bitrate' | awk '{print $3, $4}')
+rxrate="n/a"  # `iw` no entrega Rx fácilmente, puede omitirse o reemplazarse con otro método
+channel=$(iw dev "$interface" info | grep channel | awk '{print $2}')
+security=$(nmcli -t -f active,security dev wifi | grep '^yes' | cut -d':' -f2)
 
-if (( signal_value >= 80 )); then
+# Icono según la señal
+icon="󰤯"
+if (( signal >= 80 )); then
     icon="󰤨"
-elif (( signal_value >= 60 )); then
+elif (( signal >= 60 )); then
     icon="󰤥"
-elif (( signal_value >= 40 )); then
+elif (( signal >= 40 )); then
     icon="󰤢"
-elif (( signal_value >= 20 )); then
+elif (( signal >= 20 )); then
     icon="󰤟"
+else
+    icon="󰤯"
 fi
 
+# Tooltip minimal
 tooltip="SSID: $ssid"
-tooltip+="\nSignal: ${signal} dBm"
 tooltip+="\nIP: $ipaddr"
-tooltip+="\nChannel: $channel"
-tooltip+="\nSecurity: $security"
-tooltip+="\nTx: ${txrate} Kbit/s"
-tooltip+="\nRx: ${rxrate} Kbit/s"
+tooltip+="\nSeñal: ${signal}%"
+tooltip+="\nSeguridad: $security"
 
+# Output JSON para Waybar
 echo "{\"text\": \"$icon\", \"tooltip\": \"$tooltip\"}"
