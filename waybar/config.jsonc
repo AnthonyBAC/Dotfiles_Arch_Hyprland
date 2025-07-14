@@ -212,8 +212,8 @@
   "custom/distro": {
     "format": "",
     "tooltip": false,
-    "min-length": 4,
-    "max-length": 4
+    "min-length": 5,
+    "max-length": 5
   },
 
   // ─────────────────────────────────────────────────────┤ idle inhibitor ├───
