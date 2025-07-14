@@ -34,9 +34,8 @@
   border: none;
   margin: 0;
   padding: 0;
-  font-family: 'JetBrainsMono NF ExtraBold';
-  font-size: 15px;
-  font-weight: bold;
+  font-family: 'JetBrainsMono NF ';
+  font-size: 14px;
 }
 
 /* ──────────────────────────────────────────────────────────┤ drop shadow ├─── */
@@ -48,8 +47,8 @@ window#waybar {
 /* ───────────────────────────────────────────────────────────┤ background ├─── */
 window#waybar > box {
   background: @bg;
-  margin: 0px;
-  padding: 8px 0;
+  margin: 2px 0;
+  padding: 10px 0;
 }
 
 /* ─────────────────────────────────────────────────────────────┤ tooltips ├─── */
@@ -171,7 +170,7 @@ tooltip label {
 
 #workspaces button {
   color: @module-fg;
-  border-radius: 8px;
+  border-radius: 100%;
   box-shadow: none;
   margin: 0px 5px;
   transition: none;
@@ -188,6 +187,7 @@ tooltip label {
   color: @active-fg;
   background: @active-bg;
   margin: 0px 0;
+  padding: 0 8px;
 }
 
 /* ──────────────────────────────────────────────────────────┤ temperature ├─── */
@@ -394,17 +394,10 @@ tooltip label,
 #custom-leftin2,
 #custom-rightin1,
 #custom-distro {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* ───────────────────────────────────────────────────────────┤ workspaces ├─── */
-#workspaces button {
-  border-radius: 100%;
-}
-
-#workspaces button.active {
-  padding: 0 8px;
-}
 
 /* ─────────────────────────────────────────────────────────┤ power button ├─── */
 #custom-power {
