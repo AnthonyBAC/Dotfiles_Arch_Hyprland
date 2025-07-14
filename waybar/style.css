@@ -21,7 +21,7 @@
 @define-color tray #000000;
 @define-color pulseaudio #000000;
 @define-color backlight #000000;
-@define-color battery #000000;|
+@define-color battery #000000;
 @define-color power #000000;
 
 @define-color warning #ffaa00;
@@ -143,7 +143,6 @@ tooltip label {
 #custom-left7,
 #custom-left8 {
   margin-bottom: 0;
-  text-shadow: -2px 0 2px rgba(0, 0, 0, 0.5);
   color: @bracket;
 }
 
@@ -153,7 +152,6 @@ tooltip label {
 #custom-right4,
 #custom-right5 {
   margin-bottom: 0;
-  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
   color: @bracket;
 }
 
@@ -180,17 +178,16 @@ tooltip label {
 }
 
 #workspaces button:hover {
-  color: @hover-fg;
-  background: @hover-bg;
+  color: #cccccc;
   text-shadow: none;
+  padding: 0 0;
+  margin: 0px 5px;
 }
 
 #workspaces button.active {
   color: @active-fg;
   background: @active-bg;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
-  margin: 0px;
+  margin: 0px 0;
 }
 
 /* ──────────────────────────────────────────────────────────┤ temperature ├─── */
