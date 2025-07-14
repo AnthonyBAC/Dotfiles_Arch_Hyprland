@@ -16,7 +16,7 @@ configuration {
     icon-theme: "Papirus";
     show-icons: true;
     fixed-num-lines: false;
-    font: "JetBrainsMono NF ExtraBold 11";
+    font: "JetBrainsMono NF Medium 11";
 }
 
 * {
