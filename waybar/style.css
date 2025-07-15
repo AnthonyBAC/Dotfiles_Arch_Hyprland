@@ -80,7 +80,6 @@ tooltip label {
 #backlight,
 #battery,
 #custom-power,
-#custom-ethernet,
 #custom-distro,
 #idle_inhibitor,
 #clock.time,
@@ -88,6 +87,11 @@ tooltip label {
 #custom-paddc {
   padding-left: 5px;
   padding-right: 5px;
+}
+
+#custom-ethernet {
+  padding-left: 6px;
+  padding-right: 3px;
 }
 
 #custom-left1,
