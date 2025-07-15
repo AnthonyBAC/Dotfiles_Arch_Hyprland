@@ -81,22 +81,6 @@ tooltip label {
 #battery,
 #custom-power,
 #custom-ethernet,
-#custom-left1,
-#custom-left2,
-#custom-left3,
-#custom-left4,
-#custom-left5,
-#custom-left6,
-#custom-left7,
-#custom-left8,
-#custom-right1,
-#custom-right2,
-#custom-right3,
-#custom-right4,
-#custom-right5,
-#custom-leftin1,
-#custom-leftin2,
-#custom-rightin1,
 #custom-distro,
 #idle_inhibitor,
 #clock.time,
@@ -106,6 +90,30 @@ tooltip label {
   padding-right: 5px;
 }
 
+#custom-left1,
+#custom-left2,
+#custom-left3,
+#custom-left4,
+#custom-left5,
+#custom-left6,
+#custom-left7,
+#custom-left8,
+#custom-leftin1,
+#custom-leftin2 {
+  padding-left: 1px;
+}
+
+#custom-right1,
+#custom-right2,
+#custom-right3,
+#custom-right4,
+#custom-rightin1 {
+  padding-right: 1px;
+}
+
+#custom-right5 {
+  padding-right: 15px;
+}
 /* ──────────────────────────────────────────────────────────────┤ general ├─── */
 #custom-theme,
 #workspaces,
@@ -166,7 +174,7 @@ tooltip label {
 #workspaces {
   background: @workspaces;
   font-size: 14px;
-  padding: 0 12px;
+  padding: 0 30px;
 }
 
 #workspaces button {
@@ -227,7 +235,7 @@ tooltip label {
   background: @bg;
   margin: 0 -1px -2px 0;
   text-shadow: 0 0 1.5px rgba(0, 0, 0, 1);
-  padding: 0 7px 0 0;
+  padding: 0 0 0 5px;
 }
 
 #custom-left5 {
@@ -254,6 +262,7 @@ tooltip label {
 #clock.time {
   background: @time;
   margin-left: -2px;
+  padding: 0 6px;
 }
 
 #custom-right3 {
@@ -311,11 +320,16 @@ tooltip label {
 }
 
 #custom-wifi {
-  padding-right: 10px;
+  padding-right: 5px;
+  padding-left: 3px;
 }
 
 #bluetooth {
-  padding-right: 8px;
+  padding-right: 3px;
+}
+
+#custom-update {
+  padding-right: 6px;
 }
 /* ───────────────────────────────────────────────────────────┤ media info ├─── */
 #mpris {

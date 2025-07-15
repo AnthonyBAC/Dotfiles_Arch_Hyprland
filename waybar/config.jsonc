@@ -210,10 +210,10 @@
   // ─────────────────────────────────────────────────────────────┤ distro ├───
 
   "custom/distro": {
-    "format": "",
+    "format": " ",
     "tooltip": false,
-    "min-length": 5,
-    "max-length": 5
+    "min-length": 3,
+    "max-length": 3
   },
 
   // ─────────────────────────────────────────────────────┤ idle inhibitor ├───
@@ -343,7 +343,7 @@
     "tooltip-format": "Playing: {title} - {artist}",
     "tooltip-format-paused": "Paused: {title} - {artist}",
     "min-length": 5,
-    "max-length": 35
+    "max-length": 60
   },
 
   // ──────────────────────────────────────────────────────┤ output device ├───
