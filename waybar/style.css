@@ -185,15 +185,15 @@ tooltip label {
   color: @module-fg;
   border-radius: 100%;
   box-shadow: none;
-  margin: 0px 5px;
+  margin: 0px 0px;
+  padding: 0 5px;
   transition: none;
 }
 
 #workspaces button:hover {
   color: #cccccc;
   text-shadow: none;
-  padding: 0 0;
-  margin: 0px 5px;
+  padding: 0 5px;
 }
 
 #workspaces button.active {
