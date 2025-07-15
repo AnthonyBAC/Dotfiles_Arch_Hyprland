@@ -1,28 +1,28 @@
-@define-color bg #000000;
+@define-color bg rgba(0, 0, 0, 0.5);
 @define-color gray-60 #666666;
 @define-color gray-20 #cccccc;
 
 @define-color main-fg #fff;
 @define-color module-fg #fff;
-@define-color main-br #000000;
+@define-color main-br rgba(0, 0, 0, 0);
 @define-color hover-fg @gray-20;
-@define-color hover-bg #000000;
-@define-color active-fg #000000;
+@define-color hover-bg rgba(0, 0, 0, 0);
+@define-color active-fg rgba(0, 0, 0, 0);
 @define-color active-bg #fff;
 
 @define-color bracket #cccccc;
 
-@define-color workspaces #000000;
-@define-color temperature #000000;
-@define-color memory #000000;
-@define-color cpu #000000;
-@define-color time #000000;
-@define-color date #000000;
-@define-color tray #000000;
-@define-color pulseaudio #000000;
-@define-color backlight #000000;
-@define-color battery #000000;
-@define-color power #000000;
+@define-color workspaces rgba(0, 0, 0, 0);
+@define-color temperature rgba(0, 0, 0, 0);
+@define-color memory rgba(0, 0, 0, 0);
+@define-color cpu rgba(0, 0, 0, 0);
+@define-color time rgba(0, 0, 0, 0);
+@define-color date rgba(0, 0, 0, 0);
+@define-color tray rgba(0, 0, 0, 0);
+@define-color pulseaudio rgba(0, 0, 0, 0);
+@define-color backlight rgba(0, 0, 0, 0);
+@define-color battery rgba(0, 0, 0, 0);
+@define-color power rgba(0, 0, 0, 0);
 
 @define-color warning #ffaa00;
 @define-color critical #ff4444;
@@ -46,8 +46,8 @@ window#waybar {
 /* ───────────────────────────────────────────────────────────┤ background ├─── */
 window#waybar > box {
   background: @bg;
-  margin: 2px 0;
-  padding: 10px 0;
+  margin: 0px 0;
+  padding: 3px 0 5px 0;
 }
 
 /* ─────────────────────────────────────────────────────────────┤ tooltips ├─── */
@@ -197,8 +197,8 @@ tooltip label {
 }
 
 #workspaces button.active {
-  color: @active-fg;
-  background: @active-bg;
+  color: #000000;
+  background: #d5d5d5;
   margin: 0px 0;
   padding: 0 8px;
 }
@@ -236,20 +236,20 @@ tooltip label {
 
 /* ──────────────────────────────────────────────────────────┤ distro icon ├─── */
 #custom-distro {
-  background: @bg;
+  background: @tray;
   margin: 0 -1px -2px 0;
   text-shadow: 0 0 1.5px rgba(0, 0, 0, 1);
   padding: 0 0 0 5px;
 }
 
 #custom-left5 {
-  background: @bg;
+  background: @tray;
   text-shadow: none;
   margin-bottom: -2px;
 }
 
 #custom-right2 {
-  background: @bg;
+  background: @tray;
   text-shadow: none;
   margin-bottom: -2px;
 }
@@ -337,7 +337,7 @@ tooltip label {
 }
 /* ───────────────────────────────────────────────────────────┤ media info ├─── */
 #mpris {
-  background: @bg;
+  background: @tray;
   font-size: 10px;
 }
 
